@@ -1,0 +1,36 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 36
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+plot_results        1              1              1
+total               2              1              1
+
+Select jobs to execute...
+
+[Thu Aug 15 16:44:33 2024]
+rule plot_results:
+    input: data/sim_results/combined_t_test_results.csv
+    output: plots/p_value_distribution.png, plots/test_statistic_distribution.png, plots/p_value_heatmap.png, plots/p_value_by_sd_boxplot.png, plots/test_statistic_vs_mean_diff.png
+    jobid: 1
+    reason: Missing output files: plots/p_value_by_sd_boxplot.png, plots/test_statistic_vs_mean_diff.png, plots/p_value_distribution.png, plots/p_value_heatmap.png, plots/test_statistic_distribution.png
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 1 with external jobid 'Submitted batch job 46789464'.
+[Thu Aug 15 16:45:13 2024]
+Error in rule plot_results:
+    jobid: 1
+    output: plots/p_value_distribution.png, plots/test_statistic_distribution.png, plots/p_value_heatmap.png, plots/p_value_by_sd_boxplot.png, plots/test_statistic_vs_mean_diff.png
+    shell:
+        
+        Rscript scripts/03_01_plot_results.R
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: Submitted batch job 46789464
+
+Error executing rule plot_results on cluster (jobid: 1, external: Submitted batch job 46789464, jobscript: /proj/raulab/users/brian/projects/snaketutorial/.snakemake/tmp.elajt_s9/snakejob.plot_results.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-08-15T164433.240769.snakemake.log

@@ -1,0 +1,624 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count    min threads    max threads
+-------------  -------  -------------  -------------
+all                  1              1              1
+merge_t_tests        1              1              1
+run_t_test         162              1              1
+total              164              1              1
+
+Select jobs to execute...
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_50_0.csv
+    jobid: 82
+    reason: Missing output files: data/sim_results/t_test_results_5_50_0.csv
+    wildcards: group_size=5, mean_diff=50, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_4_70_0.csv
+    jobid: 68
+    reason: Missing output files: data/sim_results/t_test_results_4_70_0.csv
+    wildcards: group_size=4, mean_diff=70, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_3_20_0.csv
+    jobid: 40
+    reason: Missing output files: data/sim_results/t_test_results_3_20_0.csv
+    wildcards: group_size=3, mean_diff=20, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_3_90_0.csv
+    jobid: 54
+    reason: Missing output files: data/sim_results/t_test_results_3_90_0.csv
+    wildcards: group_size=3, mean_diff=90, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_1_60_0.csv
+    jobid: 12
+    reason: Missing output files: data/sim_results/t_test_results_1_60_0.csv
+    wildcards: group_size=1, mean_diff=60, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_80_0.csv
+    jobid: 124
+    reason: Missing output files: data/sim_results/t_test_results_7_80_0.csv
+    wildcards: group_size=7, mean_diff=80, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_40_0.csv
+    jobid: 152
+    reason: Missing output files: data/sim_results/t_test_results_9_40_0.csv
+    wildcards: group_size=9, mean_diff=40, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_1_60_10.csv
+    jobid: 13
+    reason: Missing output files: data/sim_results/t_test_results_1_60_10.csv
+    wildcards: group_size=1, mean_diff=60, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_3_20_10.csv
+    jobid: 41
+    reason: Missing output files: data/sim_results/t_test_results_3_20_10.csv
+    wildcards: group_size=3, mean_diff=20, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_3_90_10.csv
+    jobid: 55
+    reason: Missing output files: data/sim_results/t_test_results_3_90_10.csv
+    wildcards: group_size=3, mean_diff=90, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_4_70_10.csv
+    jobid: 69
+    reason: Missing output files: data/sim_results/t_test_results_4_70_10.csv
+    wildcards: group_size=4, mean_diff=70, st_dev=10
+    resources: tmpdir=/tmp
+
+[Thu Aug 15 16:30:50 2024]
+[Thu Aug 15 16:30:50 2024]
+Error in rule run_t_test:
+    jobid: 68
+    output: data/sim_results/t_test_results_4_70_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 4 70 0 data/sim_results/t_test_results_4_70_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:50 2024]
+Error in rule run_t_test:
+    jobid: 54
+    output: data/sim_results/t_test_results_3_90_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 3 90 0 data/sim_results/t_test_results_3_90_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:50 2024]
+Error in rule run_t_test:
+    jobid: 82
+    output: data/sim_results/t_test_results_5_50_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 5 50 0 data/sim_results/t_test_results_5_50_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule run_t_test:
+    jobid: 40
+    output: data/sim_results/t_test_results_3_20_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 3 20 0 data/sim_results/t_test_results_3_20_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_50_10.csv
+    jobid: 83
+    reason: Missing output files: data/sim_results/t_test_results_5_50_10.csv
+    wildcards: group_size=5, mean_diff=50, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_80_10.csv
+    jobid: 125
+    reason: Missing output files: data/sim_results/t_test_results_7_80_10.csv
+    wildcards: group_size=7, mean_diff=80, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_40_10.csv
+    jobid: 153
+    reason: Missing output files: data/sim_results/t_test_results_9_40_10.csv
+    wildcards: group_size=9, mean_diff=40, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_1_70_0.csv
+    jobid: 14
+    reason: Missing output files: data/sim_results/t_test_results_1_70_0.csv
+    wildcards: group_size=1, mean_diff=70, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_3_30_0.csv
+    jobid: 42
+    reason: Missing output files: data/sim_results/t_test_results_3_30_0.csv
+    wildcards: group_size=3, mean_diff=30, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:50 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_4_10_0.csv
+    jobid: 56
+    reason: Missing output files: data/sim_results/t_test_results_4_10_0.csv
+    wildcards: group_size=4, mean_diff=10, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_4_80_0.csv
+    jobid: 70
+    reason: Missing output files: data/sim_results/t_test_results_4_80_0.csv
+    wildcards: group_size=4, mean_diff=80, st_dev=0
+    resources: tmpdir=/tmp
+
+[Thu Aug 15 16:30:51 2024]
+Error in rule run_t_test:
+    jobid: 13
+    output: data/sim_results/t_test_results_1_60_10.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 1 60 10 data/sim_results/t_test_results_1_60_10.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_60_0.csv
+    jobid: 84
+    reason: Missing output files: data/sim_results/t_test_results_5_60_0.csv
+    wildcards: group_size=5, mean_diff=60, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_90_0.csv
+    jobid: 126
+    reason: Missing output files: data/sim_results/t_test_results_7_90_0.csv
+    wildcards: group_size=7, mean_diff=90, st_dev=0
+    resources: tmpdir=/tmp
+
+[Thu Aug 15 16:30:51 2024]
+Error in rule run_t_test:
+    jobid: 152
+    output: data/sim_results/t_test_results_9_40_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 9 40 0 data/sim_results/t_test_results_9_40_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:51 2024]
+[Thu Aug 15 16:30:51 2024]
+Error in rule run_t_test:
+    jobid: 124
+    output: data/sim_results/t_test_results_7_80_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 7 80 0 data/sim_results/t_test_results_7_80_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule run_t_test:
+    jobid: 12
+    output: data/sim_results/t_test_results_1_60_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 1 60 0 data/sim_results/t_test_results_1_60_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_50_0.csv
+    jobid: 154
+    reason: Missing output files: data/sim_results/t_test_results_9_50_0.csv
+    wildcards: group_size=9, mean_diff=50, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_1_70_10.csv
+    jobid: 15
+    reason: Missing output files: data/sim_results/t_test_results_1_70_10.csv
+    wildcards: group_size=1, mean_diff=70, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_3_30_10.csv
+    jobid: 43
+    reason: Missing output files: data/sim_results/t_test_results_3_30_10.csv
+    wildcards: group_size=3, mean_diff=30, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_4_10_10.csv
+    jobid: 57
+    reason: Missing output files: data/sim_results/t_test_results_4_10_10.csv
+    wildcards: group_size=4, mean_diff=10, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_4_80_10.csv
+    jobid: 71
+    reason: Missing output files: data/sim_results/t_test_results_4_80_10.csv
+    wildcards: group_size=4, mean_diff=80, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_60_10.csv
+    jobid: 85
+    reason: Missing output files: data/sim_results/t_test_results_5_60_10.csv
+    wildcards: group_size=5, mean_diff=60, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_90_10.csv
+    jobid: 127
+    reason: Missing output files: data/sim_results/t_test_results_7_90_10.csv
+    wildcards: group_size=7, mean_diff=90, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_50_10.csv
+    jobid: 155
+    reason: Missing output files: data/sim_results/t_test_results_9_50_10.csv
+    wildcards: group_size=9, mean_diff=50, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_1_80_0.csv
+    jobid: 16
+    reason: Missing output files: data/sim_results/t_test_results_1_80_0.csv
+    wildcards: group_size=1, mean_diff=80, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_3_40_0.csv
+    jobid: 44
+    reason: Missing output files: data/sim_results/t_test_results_3_40_0.csv
+    wildcards: group_size=3, mean_diff=40, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:51 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_4_20_0.csv
+    jobid: 58
+    reason: Missing output files: data/sim_results/t_test_results_4_20_0.csv
+    wildcards: group_size=4, mean_diff=20, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:52 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_4_90_0.csv
+    jobid: 72
+    reason: Missing output files: data/sim_results/t_test_results_4_90_0.csv
+    wildcards: group_size=4, mean_diff=90, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:52 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_70_0.csv
+    jobid: 86
+    reason: Missing output files: data/sim_results/t_test_results_5_70_0.csv
+    wildcards: group_size=5, mean_diff=70, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:52 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_8_10_0.csv
+    jobid: 128
+    reason: Missing output files: data/sim_results/t_test_results_8_10_0.csv
+    wildcards: group_size=8, mean_diff=10, st_dev=0
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:30:52 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_60_0.csv
+    jobid: 156
+    reason: Missing output files: data/sim_results/t_test_results_9_60_0.csv
+    wildcards: group_size=9, mean_diff=60, st_dev=0
+    resources: tmpdir=/tmp
+
+[Thu Aug 15 16:30:52 2024]
+[Thu Aug 15 16:30:52 2024]
+Error in rule run_t_test:
+    jobid: 56
+    output: data/sim_results/t_test_results_4_10_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 4 10 0 data/sim_results/t_test_results_4_10_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule run_t_test:
+    jobid: 14
+    output: data/sim_results/t_test_results_1_70_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 1 70 0 data/sim_results/t_test_results_1_70_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:52 2024]
+Error in rule run_t_test:
+    jobid: 42
+    output: data/sim_results/t_test_results_3_30_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 3 30 0 data/sim_results/t_test_results_3_30_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 15 16:30:52 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_1_80_10.csv
+    jobid: 17
+    reason: Missing output files: data/sim_results/t_test_results_1_80_10.csv
+    wildcards: group_size=1, mean_diff=80, st_dev=10
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+[Thu Aug 15 16:30:52 2024]
+Error in rule run_t_test:
+    jobid: 70
+    output: data/sim_results/t_test_results_4_80_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 4 80 0 data/sim_results/t_test_results_4_80_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:52 2024]
+Error in rule run_t_test:
+    jobid: 84
+    output: data/sim_results/t_test_results_5_60_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 5 60 0 data/sim_results/t_test_results_5_60_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:52 2024]
+Error in rule run_t_test:
+    jobid: 126
+    output: data/sim_results/t_test_results_7_90_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 7 90 0 data/sim_results/t_test_results_7_90_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:52 2024]
+Error in rule run_t_test:
+    jobid: 15
+    output: data/sim_results/t_test_results_1_70_10.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 1 70 10 data/sim_results/t_test_results_1_70_10.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:52 2024]
+Error in rule run_t_test:
+    jobid: 154
+    output: data/sim_results/t_test_results_9_50_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 9 50 0 data/sim_results/t_test_results_9_50_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:52 2024]
+Error in rule run_t_test:
+    jobid: 16
+    output: data/sim_results/t_test_results_1_80_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 1 80 0 data/sim_results/t_test_results_1_80_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:53 2024]
+Error in rule run_t_test:
+    jobid: 58
+    output: data/sim_results/t_test_results_4_20_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 4 20 0 data/sim_results/t_test_results_4_20_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:53 2024]
+Error in rule run_t_test:
+    jobid: 72
+    output: data/sim_results/t_test_results_4_90_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 4 90 0 data/sim_results/t_test_results_4_90_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:53 2024]
+Error in rule run_t_test:
+    jobid: 44
+    output: data/sim_results/t_test_results_3_40_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 3 40 0 data/sim_results/t_test_results_3_40_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:53 2024]
+Error in rule run_t_test:
+    jobid: 86
+    output: data/sim_results/t_test_results_5_70_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 5 70 0 data/sim_results/t_test_results_5_70_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:53 2024]
+Error in rule run_t_test:
+    jobid: 156
+    output: data/sim_results/t_test_results_9_60_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 9 60 0 data/sim_results/t_test_results_9_60_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:53 2024]
+Error in rule run_t_test:
+    jobid: 128
+    output: data/sim_results/t_test_results_8_10_0.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 8 10 0 data/sim_results/t_test_results_8_10_0.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 15 16:30:53 2024]
+Error in rule run_t_test:
+    jobid: 17
+    output: data/sim_results/t_test_results_1_80_10.csv
+    shell:
+        
+        Rscript scripts/01_01_run_t_test.R 1 80 10 data/sim_results/t_test_results_1_80_10.csv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_3_20_10.csv completed successfully, but some output files are missing. 41
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_7_80_10.csv completed successfully, but some output files are missing. 125
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_4_70_10.csv completed successfully, but some output files are missing. 69
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_3_90_10.csv completed successfully, but some output files are missing. 55
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_5_50_10.csv completed successfully, but some output files are missing. 83
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_9_40_10.csv completed successfully, but some output files are missing. 153
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_4_10_10.csv completed successfully, but some output files are missing. 57
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_3_30_10.csv completed successfully, but some output files are missing. 43
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_4_80_10.csv completed successfully, but some output files are missing. 71
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_7_90_10.csv completed successfully, but some output files are missing. 127
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_9_50_10.csv completed successfully, but some output files are missing. 155
+Waiting at most 5 seconds for missing files.
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake/log/2024-08-15T163049.888440.snakemake.log

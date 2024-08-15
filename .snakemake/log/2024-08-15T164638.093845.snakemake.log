@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 36
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+plot_results        1              1              1
+total               2              1              1
+
+Select jobs to execute...
+
+[Thu Aug 15 16:46:39 2024]
+rule plot_results:
+    input: data/sim_results/combined_t_test_results.csv
+    output: plots/p_value_distribution.png, plots/test_statistic_distribution.png, plots/p_value_heatmap.png, plots/p_value_by_sd_boxplot.png, plots/test_statistic_vs_mean_diff.png
+    jobid: 1
+    reason: Missing output files: plots/p_value_distribution.png, plots/test_statistic_distribution.png, plots/p_value_heatmap.png, plots/p_value_by_sd_boxplot.png, plots/test_statistic_vs_mean_diff.png
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Submitted job 1 with external jobid 'Submitted batch job 46789591'.
+[Thu Aug 15 16:48:19 2024]
+Finished job 1.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Thu Aug 15 16:48:19 2024]
+localrule all:
+    input: plots/p_value_distribution.png, plots/test_statistic_distribution.png, plots/p_value_heatmap.png, plots/p_value_by_sd_boxplot.png, plots/test_statistic_vs_mean_diff.png
+    jobid: 0
+    reason: Input files updated by another job: plots/p_value_distribution.png, plots/test_statistic_distribution.png, plots/p_value_heatmap.png, plots/p_value_by_sd_boxplot.png, plots/test_statistic_vs_mean_diff.png
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+[Thu Aug 15 16:48:19 2024]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2024-08-15T164638.093845.snakemake.log

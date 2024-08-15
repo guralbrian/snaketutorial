@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=1000, disk_mb=1000
+Select jobs to execute...
+
+[Thu Aug 15 16:47:08 2024]
+rule plot_results:
+    input: data/sim_results/combined_t_test_results.csv
+    output: plots/p_value_distribution.png, plots/test_statistic_distribution.png, plots/p_value_heatmap.png, plots/p_value_by_sd_boxplot.png, plots/test_statistic_vs_mean_diff.png
+    jobid: 0
+    reason: Forced execution
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+All plots have been generated and saved in the 'plots' directory.
+[Thu Aug 15 16:47:38 2024]
+Finished job 0.
+1 of 1 steps (100%) done

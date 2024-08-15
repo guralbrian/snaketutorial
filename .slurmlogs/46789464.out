@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Provided resources: mem_mb=1000, disk_mb=1000
+Select jobs to execute...
+
+[Thu Aug 15 16:45:07 2024]
+rule plot_results:
+    input: data/sim_results/combined_t_test_results.csv
+    output: plots/p_value_distribution.png, plots/test_statistic_distribution.png, plots/p_value_heatmap.png, plots/p_value_by_sd_boxplot.png, plots/test_statistic_vs_mean_diff.png
+    jobid: 0
+    reason: Forced execution
+    resources: mem_mb=1000, disk_mb=1000, tmpdir=/tmp
+
+Fatal error: cannot open file 'scripts/03_01_plot_results.R': No such file or directory
+[Thu Aug 15 16:45:09 2024]
+Error in rule plot_results:
+    jobid: 0
+    output: plots/p_value_distribution.png, plots/test_statistic_distribution.png, plots/p_value_heatmap.png, plots/p_value_by_sd_boxplot.png, plots/test_statistic_vs_mean_diff.png
+    shell:
+        
+        Rscript scripts/03_01_plot_results.R
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message

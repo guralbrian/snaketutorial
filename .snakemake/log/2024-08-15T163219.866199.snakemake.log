@@ -1,0 +1,372 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 36
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count    min threads    max threads
+-------------  -------  -------------  -------------
+all                  1              1              1
+merge_t_tests        1              1              1
+run_t_test          45              1              1
+total               47              1              1
+
+Select jobs to execute...
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_70_10.csv
+    jobid: 26
+    reason: Missing output files: data/sim_results/t_test_results_7_70_10.csv
+    wildcards: group_size=7, mean_diff=70, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_30_10.csv
+    jobid: 40
+    reason: Missing output files: data/sim_results/t_test_results_9_30_10.csv
+    wildcards: group_size=9, mean_diff=30, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_6_20_10.csv
+    jobid: 12
+    reason: Missing output files: data/sim_results/t_test_results_6_20_10.csv
+    wildcards: group_size=6, mean_diff=20, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_50_10.csv
+    jobid: 6
+    reason: Missing output files: data/sim_results/t_test_results_5_50_10.csv
+    wildcards: group_size=5, mean_diff=50, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_10_10.csv
+    jobid: 20
+    reason: Missing output files: data/sim_results/t_test_results_7_10_10.csv
+    wildcards: group_size=7, mean_diff=10, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_8_60_10.csv
+    jobid: 34
+    reason: Missing output files: data/sim_results/t_test_results_8_60_10.csv
+    wildcards: group_size=8, mean_diff=60, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_6_30_10.csv
+    jobid: 13
+    reason: Missing output files: data/sim_results/t_test_results_6_30_10.csv
+    wildcards: group_size=6, mean_diff=30, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_80_10.csv
+    jobid: 27
+    reason: Missing output files: data/sim_results/t_test_results_7_80_10.csv
+    wildcards: group_size=7, mean_diff=80, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_40_10.csv
+    jobid: 41
+    reason: Missing output files: data/sim_results/t_test_results_9_40_10.csv
+    wildcards: group_size=9, mean_diff=40, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_20_10.csv
+    jobid: 21
+    reason: Missing output files: data/sim_results/t_test_results_7_20_10.csv
+    wildcards: group_size=7, mean_diff=20, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_8_70_10.csv
+    jobid: 35
+    reason: Missing output files: data/sim_results/t_test_results_8_70_10.csv
+    wildcards: group_size=8, mean_diff=70, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_60_10.csv
+    jobid: 7
+    reason: Missing output files: data/sim_results/t_test_results_5_60_10.csv
+    wildcards: group_size=5, mean_diff=60, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_6_40_10.csv
+    jobid: 14
+    reason: Missing output files: data/sim_results/t_test_results_6_40_10.csv
+    wildcards: group_size=6, mean_diff=40, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_90_10.csv
+    jobid: 28
+    reason: Missing output files: data/sim_results/t_test_results_7_90_10.csv
+    wildcards: group_size=7, mean_diff=90, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_50_10.csv
+    jobid: 42
+    reason: Missing output files: data/sim_results/t_test_results_9_50_10.csv
+    wildcards: group_size=9, mean_diff=50, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_70_10.csv
+    jobid: 8
+    reason: Missing output files: data/sim_results/t_test_results_5_70_10.csv
+    wildcards: group_size=5, mean_diff=70, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_30_10.csv
+    jobid: 22
+    reason: Missing output files: data/sim_results/t_test_results_7_30_10.csv
+    wildcards: group_size=7, mean_diff=30, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_8_80_10.csv
+    jobid: 36
+    reason: Missing output files: data/sim_results/t_test_results_8_80_10.csv
+    wildcards: group_size=8, mean_diff=80, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_6_50_10.csv
+    jobid: 15
+    reason: Missing output files: data/sim_results/t_test_results_6_50_10.csv
+    wildcards: group_size=6, mean_diff=50, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_8_10_10.csv
+    jobid: 29
+    reason: Missing output files: data/sim_results/t_test_results_8_10_10.csv
+    wildcards: group_size=8, mean_diff=10, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_60_10.csv
+    jobid: 43
+    reason: Missing output files: data/sim_results/t_test_results_9_60_10.csv
+    wildcards: group_size=9, mean_diff=60, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_80_10.csv
+    jobid: 9
+    reason: Missing output files: data/sim_results/t_test_results_5_80_10.csv
+    wildcards: group_size=5, mean_diff=80, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_40_10.csv
+    jobid: 23
+    reason: Missing output files: data/sim_results/t_test_results_7_40_10.csv
+    wildcards: group_size=7, mean_diff=40, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_8_90_10.csv
+    jobid: 37
+    reason: Missing output files: data/sim_results/t_test_results_8_90_10.csv
+    wildcards: group_size=8, mean_diff=90, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:20 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_10_10.csv
+    jobid: 2
+    reason: Missing output files: data/sim_results/t_test_results_5_10_10.csv
+    wildcards: group_size=5, mean_diff=10, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_6_60_10.csv
+    jobid: 16
+    reason: Missing output files: data/sim_results/t_test_results_6_60_10.csv
+    wildcards: group_size=6, mean_diff=60, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_8_20_10.csv
+    jobid: 30
+    reason: Missing output files: data/sim_results/t_test_results_8_20_10.csv
+    wildcards: group_size=8, mean_diff=20, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_8_50_10.csv
+    jobid: 33
+    reason: Missing output files: data/sim_results/t_test_results_8_50_10.csv
+    wildcards: group_size=8, mean_diff=50, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_70_10.csv
+    jobid: 44
+    reason: Missing output files: data/sim_results/t_test_results_9_70_10.csv
+    wildcards: group_size=9, mean_diff=70, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_90_10.csv
+    jobid: 10
+    reason: Missing output files: data/sim_results/t_test_results_5_90_10.csv
+    wildcards: group_size=5, mean_diff=90, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_7_50_10.csv
+    jobid: 24
+    reason: Missing output files: data/sim_results/t_test_results_7_50_10.csv
+    wildcards: group_size=7, mean_diff=50, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_9_10_10.csv
+    jobid: 38
+    reason: Missing output files: data/sim_results/t_test_results_9_10_10.csv
+    wildcards: group_size=9, mean_diff=10, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_6_70_10.csv
+    jobid: 17
+    reason: Missing output files: data/sim_results/t_test_results_6_70_10.csv
+    wildcards: group_size=6, mean_diff=70, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_5_30_10.csv
+    jobid: 4
+    reason: Missing output files: data/sim_results/t_test_results_5_30_10.csv
+    wildcards: group_size=5, mean_diff=30, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_8_30_10.csv
+    jobid: 31
+    reason: Missing output files: data/sim_results/t_test_results_8_30_10.csv
+    wildcards: group_size=8, mean_diff=30, st_dev=10
+    resources: tmpdir=/tmp
+
+
+[Thu Aug 15 16:32:21 2024]
+rule run_t_test:
+    output: data/sim_results/t_test_results_6_90_10.csv
+    jobid: 19
+    reason: Missing output files: data/sim_results/t_test_results_6_90_10.csv
+    wildcards: group_size=6, mean_diff=90, st_dev=10
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_7_70_10.csv completed successfully, but some output files are missing. 26
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_7_10_10.csv completed successfully, but some output files are missing. 20
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_9_30_10.csv completed successfully, but some output files are missing. 40
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_8_60_10.csv completed successfully, but some output files are missing. 34
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_6_20_10.csv completed successfully, but some output files are missing. 12
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_6_30_10.csv completed successfully, but some output files are missing. 13
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_9_40_10.csv completed successfully, but some output files are missing. 41
+Waiting at most 5 seconds for missing files.
+MissingOutputException in line 11 of /proj/raulab/users/brian/projects/snaketutorial/Snakefile:
+Job Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+data/sim_results/t_test_results_5_50_10.csv completed successfully, but some output files are missing. 6
+Waiting at most 5 seconds for missing files.
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake/log/2024-08-15T163219.866199.snakemake.log
